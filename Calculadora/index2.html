@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <br>
+    <br>
+    <br>
+    <input id="numeroA"> Número A </input>  
+    <br>
+    <br>
+    <br>
+    <input id="numeroB"> Número B </input> 
+    <br>
+    <br>
+    <br>
+    <button id="division" onclick="division()" >DIVISION (/)</button>
+    <button id="multiplicacion" onclick="multiplicacion()" >MULTIPLICACION (*)</button>
+    <button id="suma" onclick="suma()" >SUMA (+)</button>
+    <button type="reset"> Reset</button>
+    <button id="resta" onclick="resta()" >RESTA (-)</button>
+    <br>
+    <!-- <h1>Resultado -: </h1><input id="resultadoresta"></input> -->
+    <h1>Resultado : </h1><input id="resultadoSuma"></input>
+    <!-- <h1>Resultado *: </h1><input id="resultadomultiplicacion"></input>
+    <h1>Resultado /: </h1><input id="resultadodivision"></input> -->
+
+
+    <script>
+        var reset = document.getElementById('reset')
+        console.log("Ejecutando codigo Javascript!!!")
+        
+        function suma (){
+            console.log("Iniciando suma");
+
+
+            
+            
+            valorA = document.getElementById("numeroA").value;
+            valorB = document.getElementById("numeroB").value;
+            campoResultado = document.getElementById("resultadoSuma");
+            console.log("Campo resultado =>", typeof campoResultado.value,typeof "" )
+
+            if(!valorA || !valorB){
+
+                campoResultado.value = "Faltan Datos";
+                } else {
+            
+                console.log("procesando resultado");        
+                console.log("Valor A =>", valorA);
+                console.log("Valor B =>", valorB);
+                campoResultado.value = Number(valorA) + Number(valorB);
+            
+                         }}
+
+
+         function resta (){
+            console.log("Iniciando resta");
+
+
+            
+            
+            valorA = document.getElementById("numeroA").value;
+            valorB = document.getElementById("numeroB").value;
+            campoResultado = document.getElementById("resultadosuma");
+            console.log("Campo resultado =>", typeof campoResultado.value,typeof "" )
+
+            if(!valorA || !valorB){
+
+                campoResultado.value = "Faltan Datos";
+                } else {
+            
+                console.log("procesando resultado");        
+                console.log("Valor A =>", valorA);
+                console.log("Valor B =>", valorB);
+                campoResultado.value = Number(valorA) - Number(valorB);
+            
+                         }}
+
+
+
+    function multiplicacion (){
+            console.log("Iniciando multiplicacion");
+
+
+            
+            
+            valorA = document.getElementById("numeroA").value;
+            valorB = document.getElementById("numeroB").value;
+            campoResultado = document.getElementById("resultadoSuma");
+            console.log("Campo resultado =>", typeof campoResultado.value,typeof "" )
+
+            if(!valorA || !valorB){
+
+                campoResultado.value = "Faltan Datos";
+                } else {
+            
+                console.log("procesando resultado");        
+                console.log("Valor A =>", valorA);
+                console.log("Valor B =>", valorB);
+                campoResultado.value = Number(valorA) * Number(valorB);
+            
+                         }}
+
+    function division (){
+            console.log("Iniciando division");
+
+
+            
+            
+            valorA = document.getElementById("numeroA").value;
+            valorB = document.getElementById("numeroB").value;
+            campoResultado = document.getElementById("resultadoSuma");
+            console.log("Campo resultado =>", typeof campoResultado.value,typeof "" )
+
+            if(!valorA || !valorB){
+
+                campoResultado.value = "Faltan Datos";
+                } else {
+            
+                console.log("procesando resultado");        
+                console.log("Valor A =>", valorA);
+                console.log("Valor B =>", valorB);
+                campoResultado.value = Number(valorA) / Number(valorB);
+            
+                         }}
+
+        
+
+     </script>
+
+</body>
+</html>
+
+                        

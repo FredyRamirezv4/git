@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+
+<>
+    <h1>Calculadora</h1>
+
+    <br>
+
+   <input id="numeroA"> A</input >
+   <br>
+   <br>
+   <input id="numeroB"> B</input >
+   <br>
+   <br>
+   <button id="suma" onclick="suma()" >Suma (+)</button>
+   <br>
+   <br>
+   <h2>Resultado:</h2><input id="resultadoSuma"></input>
+  
+  
+  <script>
+
+    console.log("ejecuta codigo javascript")
+
+   // const valorA = document.getElementById("numeroA").value
+
+    //console.log("Valor A =>", valorA)
+
+    function suma (){
+        console.log("inicio suma");
+
+
+
+
+
+        let valorA = document.getElementById("numeroA").value;
+        let valorB = document.getElementById("numeroB").value;
+        let campoResultado = document.getElementById("Resultado Suma");
+    //console.log(" Campo Resultado =>", typeof campoResultado.value,typeof "")
+       
+    
+    
+    if( !valorA || !valorB){
+            campoResultado.value = "faltan datos";
+        }
+        
+        /*if (valorA && valorB){
+            console.log("procesando Resultado");
+            console.log("Valor A =>, valorA");
+            console.log("Valor B =>, valorB");
+        }*/
+
+        console.log("Valor A =>", valorA);
+        console.log("Valor B =>", valorB);
+
+        let Resultado = Number(valorA) + Number(valorB);
+        console.log("Resultado =>", Resultado)
+    }
+   </script>
+
+</body>
+</html>
