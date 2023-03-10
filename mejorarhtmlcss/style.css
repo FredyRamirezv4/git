@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(109, 105, 105);
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.caja1{
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+  border-radius: 80%;
+    background: orange;
+    height: 100px;
+    width: 100px;
+    
+
+}
+.caja2{
+
+    font-size: medium;
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    background: goldenrod;
+    
+}
+
+.caja3{
+    background: coral;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 70%;
+    height: 100px;
+    width: 100px;
+   
+
+
+}
+.compilador{
+    display: flex;
+    background: rgb(226, 203, 203);
+    justify-content: center;
+    align-items: center;
+    height: 2040px;
+    width: 600px;
+
+}
+.hijo{
+    background: black;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+ 
+  
+    
+    
+}
+        
+        
+

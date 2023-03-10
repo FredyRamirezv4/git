@@ -1,0 +1,52 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(243, 238, 238);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    background-color: rgb(71, 69, 71);
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    margin-right: 8px;
+}
+nav a{
+    font-weight: 700;
+    
+}
+nav a:hover{
+    color: blueviolet;
+}
+@media (
+    max-width: 680px){
+        header{
+            flex-direction: column;
+        }
+        nav{
+            padding: 10px 0px;
+        }
+    }
+
+    
