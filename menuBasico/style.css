@@ -171,7 +171,7 @@ nav a:hover{
       }
 
       .searchBar{
-        border: none 1px rgb(212, 210, 210);
+        border: none 1px rgb(150, 150, 150);
         border-radius: 28px;
         display: flex;
         flex-direction: row;
@@ -182,15 +182,17 @@ nav a:hover{
       .searchBar:focus-within{
         border: solid 1px rgb(163, 162, 162);
         box-shadow: 8px 5px 5px rgb(128, 126, 126, 0.2)
+        
 
       }
       .searchBar input{
-        background-color: aqua;
+        background-color: rgb(233, 224, 224);
         border: none;
         outline: none;
         padding: 10px;
         font-size: 20px;
         flex: auto;
+        border-radius: 10px;
       }
 
       .searchBar .actions{
@@ -207,3 +209,83 @@ nav a:hover{
       .searchBar .actions button:hover{
         color: rgb(133, 133, 173);
       }
+      .container{
+        background-color: rgb(8, 157, 216);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     position: absolute;
+      width: 100%;
+      }
+      .container .subContainer{
+        background-color: white;
+        width: 400px;
+        border-radius: 15%;
+        padding: 15px 50px;
+        box-shadow: 3px 3px rgb(157, 179, 252, 0.5), -1em 0 0.4em rgb(120, 163, 243, 0.6);
+    }
+    .container .subContainer .content{
+        background-color: rgb(253, 255, 254);
+        display: flex;
+        gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      flex: auto;
+      flex-direction: row;
+
+    }
+    .container .subContainer .content .icon{
+    
+        margin-right: 5px;
+    }
+
+    .container .subContainer .content .message .text{
+       
+        font-weight: bolder;
+    }
+    .container .subContainer .content .message .title{
+       display: flex;
+       flex-direction: column;
+    }
+    .container .subContainer .actions{
+       
+        padding: 10px 0px;
+        display: flex;
+        justify-content: end;
+        gap: 3px;
+    }
+
+    .container .subContainer .actions button{
+        border: none;
+        padding: 7px;
+        font-weight: bold;
+        min-width: 120px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .container .subContainer .actions .buttomdownload{
+        background-color: rgb(57, 97, 228);
+        color: aliceblue;
+    }
+    .container .subContainer .actions .buttomdownload:hover{
+        background-color: rgb(33, 69, 187)
+    }
+
+    .container .subContainer .actions .buttomreturn{
+        background-color: aliceblue;
+        border-radius: 1px rgb(199, 197, 197);
+    }
+    .container .subContainer .actions .buttomreturn:hover{
+        background-color: rgb(201, 199, 199);
+    }
+
+    @media (max-width:600px){
+        .container .subContainer{
+            width: 90%;
+             }
+    .container .subContainer .actions{
+        flex-direction: column;
+    }
+            
+    }
